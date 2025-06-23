@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TSRTC Bus Pass Application</title>
+</head>
+<body>
+
+  <center>
+    <fieldset style="width:1000px;">
+      <img src="./tsrtc.jpeg" alt="TSRTC Logo" width="60px">
+      <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+      <h2>GENERAL BUS PASS APPLICATION</h2>
+    </fieldset>
+  </center>
+
+  <form>
+    <!-- Applicant Details -->
+    <center>
+      <fieldset style="width:1000px;">
+        <legend><h2>Applicant Details</h2></legend>
+        <table>
+          <tr>
+            <td><label for="name">Applicant Name*</label></td>
+            <td><input type="text" id="name" name="name" maxlength="30" required></td>
+
+            <td><label for="father">Father's Name*</label></td>
+            <td><input type="text" id="father" name="father" maxlength="20" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">Date of Birth*</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+
+            <td><label for="aadhaar">Aadhaar Number*</label></td>
+            <td><input type="text" id="aadhaar" name="aadhaar" maxlength="12" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="whatsapp">Whatsapp Number*</label></td>
+            <td><input type="text" id="whatsapp" name="whatsapp" maxlength="10" required></td>
+
+            <td><label for="email">Email ID*</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="photo">Photo*</label></td>
+            <td><input type="file" id="photo" name="photo" required></td>
+
+            <td><label>Gender*</label></td>
+            <td>
+              <input type="radio" id="male" name="gender" value="Male" required>
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="Female" required>
+              <label for="female">Female</label>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </center>
+
+    <!-- Residential Address -->
+    <center>
+      <fieldset style="width:1000px;">
+        <legend><h2>Residential Address</h2></legend>
+        <table>
+          <tr>
+            <td><label for="address">Residential Address*</label></td>
+            <td><input type="text" id="address" name="address" required></td>
+
+            <td><label for="pincode">Pincode*</label></td>
+            <td><input type="text" id="pincode" name="pincode" maxlength="6" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="district">Select District*</label></td>
+            <td>
+              <select id="district" name="district" required>
+                <option value="">--Select--</option>
+                <option value="Mancherial">Mancherial</option>
+                <option value="Peddapalli">Peddapalli</option>
+                <option value="Karimnagar">Karimnagar</option>
+                <option value="Nizamabad">Nizamabad</option>
+              </select>
+            </td>
+
+            <td><label for="mandal">Mandal*</label></td>
+            <td>
+              <select id="mandal" name="mandal" required>
+                <option value="">--Select--</option>
+                <option value="Mancherial">Mancherial</option>
+                <option value="Srirampur">Srirampur</option>
+                <option value="Godavarikhani">Godavarikhani</option>
+                <option value="Sultanabad">Sultanabad</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </center>
+
+    <!-- Pass Type Details -->
+    <center>
+      <fieldset style="width:1000px;">
+        <legend><h2>Pass Type Details</h2></legend>
+        <table>
+          <tr>
+            <td><label for="city">Select City*</label></td>
+            <td>
+              <select id="city" name="city" required>
+                <option value="">--Select--</option>
+                <option value="Hyderabad">Hyderabad</option>
+              </select>
+            </td>
+
+            <td><label for="pass">Pass Details*</label></td>
+            <td>
+              <select id="pass" name="pass" required>
+                <option value="">--Select--</option>
+                <option value="Greater Pass">Greater Pass</option>
+                <option value="General Ordinary Pass">General Ordinary Pass</option>
+                <option value="General Metro Pass">General Metro Pass</option>
+                <option value="Ordinary Pass">Ordinary Pass</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </center>
+
+    <!-- Payment and Pass Collection -->
+    <center>
+      <fieldset style="width:1000px;">
+        <legend><h2>Mode of Payment & Pass Collection</h2></legend>
+        <table>
+          <tr>
+            <td><label for="payment">Select Payment Mode*</label></td>
+            <td>
+              <select id="payment" name="payment" required>
+                <option value="">--Select--</option>
+                <option value="Online">Online</option>
+                <option value="Offline">Offline</option>
+              </select>
+            </td>
+
+            <td><label for="delivery">Pass Delivery Mode*</label></td>
+            <td>
+              <select id="delivery" name="delivery" required>
+                <option value="">--Select--</option>
+                <option value="Counter">Counter</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="center">Select Center to Collect RTC Pass*</label></td>
+            <td>
+              <select id="center" name="center" required>
+                <option value="">--Select--</option>
+                <option value="RTC JNTU">RTC JNTU</option>
+                <option value="RTC Kukatpally">RTC Kukatpally</option>
+                <option value="RTC Secunderabad">RTC Secunderabad</option>
+                <option value="RTC Ameerpet">RTC Ameerpet</option>
+                <option value="RTC Mehdipatnam">RTC Mehdipatnam</option>
+                <option value="RTC Uppal">RTC Uppal</option>
+                <option value="RTC LB Nagar">RTC LB Nagar</option>
+                <option value="RTC KPHB">RTC KPHB</option>
+                <option value="RTC Dilsukhnagar">RTC Dilsukhnagar</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </center>
+
+    <!-- CAPTCHA -->
+    <center>
+      <fieldset style="width:1000px;">
+        <legend><h2>Verification</h2></legend>
+        <label for="captcha">Enter the code: <b>G5K7P</b></label>
+        <input type="text" id="captcha" name="captcha" required>
+      </fieldset>
+    </center>
+
+    <!-- Submit Button -->
+    <center>
+      <br>
+      <input type="submit" value="Submit">
+    </center>
+  </form>
+</body>
+</html>
